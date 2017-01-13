@@ -1,6 +1,6 @@
 //Code React element here
 
-var meInReact = React.createElement('div',{className:"me"},
+const meInReact = React.createElement('div',{className:"me"},
   React.createElement('h1',{}, 'An Awesome Person'),
   React.createElement('p',{}, 'Who is learning React'),
   React.createElement('ul',{className: "me__interests"},
@@ -13,4 +13,7 @@ var meInReact = React.createElement('div',{className:"me"},
     )
 )
 
-ReactDom.render(meInReact, document.getElementById('main'))
+ReactDOM.render(
+	meInReact,
+	document.getElementById('main')
+	)
